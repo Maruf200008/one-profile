@@ -1,4 +1,4 @@
-import { heroImage } from "@/public/assets";
+import { maruf } from "@/public/assets";
 import Image from "next/image";
 import { RiArrowRightSLine } from "react-icons/ri";
 
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
         <div>
           <Image
-            src={heroImage}
+            src={maruf}
             alt="hero image"
             className=" rounded-2xl mx-auto  mt-11 md:mt-0  w-full md:w-[500px]"
           />

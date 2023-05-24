@@ -1,10 +1,11 @@
+import Link from "next/link";
 import {
-  arrayDestruct,
-  installNode,
-  navbar,
-  reactParallax,
-  reactSmooth,
-  reactWeather,
+  booking,
+  gymBrain,
+  ieltsClone,
+  landingPage,
+  salon,
+  shopingCard,
 } from "../../public/assets";
 
 import Image from "next/image";
@@ -13,27 +14,39 @@ const Portfoli = () => {
   const portfolis = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: ieltsClone,
+      siteLink: "https://strong-genie-7f43f1.netlify.app",
+      githubLink: "https://github.com/Maruf200008/ielts-clone",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: landingPage,
+      siteLink: "https://funny-gnome-ef52d0.netlify.app",
+      githubLink: "https://github.com/Maruf200008/tailwindCss-LandingPage",
     },
     {
       id: 3,
-      src: navbar,
+      src: booking,
+      siteLink: "https://imaginative-bavarois-d80524.netlify.app",
+      githubLink: "https://github.com/Maruf200008/assinmengt-4",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: shopingCard,
+      siteLink: "https://vermillion-faloodeh-2e7fdc.netlify.app",
+      githubLink: "https://github.com/Maruf200008/assignment-7",
     },
     {
       id: 5,
-      src: installNode,
+      src: gymBrain,
+      siteLink: "https://gym-brain-two.vercel.app",
+      githubLink: "github.com/Maruf200008/Gym-brain",
     },
     {
       id: 6,
-      src: reactWeather,
+      src: salon,
+      siteLink: "https://starlit-zabaione-a5b948.netlify.app",
+      githubLink: "github.com/Maruf200008/Gym-brain",
     },
   ];
   return (
@@ -47,7 +60,7 @@ const Portfoli = () => {
         </div>
 
         <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolis.map(({ src, id }) => (
+          {portfolis.map(({ src, id, siteLink, githubLink }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <Image
                 src={src}
@@ -55,12 +68,18 @@ const Portfoli = () => {
                 className=" rounded-md duration-200 hover:scale-105"
               />
               <div className=" flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <Link
+                  href={siteLink}
+                  className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </Link>
+                <Link
+                  href={githubLink}
+                  className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </Link>
               </div>
             </div>
           ))}

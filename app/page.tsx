@@ -1,5 +1,6 @@
 import {
   About,
+  Contact,
   Experince,
   Hero,
   Navbar,
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Portfoli />
       <Experince />
+      <Contact />
     </div>
   );
 }
