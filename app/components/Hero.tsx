@@ -11,9 +11,9 @@ const Hero = () => {
             I'm a Full Stack Developer
           </h2>
           <p className=" text-gray-400 max-w-md">
-            I have 8 years experience building and desgining software.
-            Currently, I love to work on Web Application using technologies like
-            : React, TailwindCss, Redux, Next JS & Node JS{" "}
+            I have 2 years experience Web Developer. I love to work on Web
+            Application using technologies like : React, TailwindCss, Redux,
+            Next JS & Node JS{" "}
           </p>
           <div>
             <button className=" group px-6 py-3 my-2 md:w-fit flex justify-center w-full items-center rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">

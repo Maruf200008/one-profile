@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
-    <div className=" flex justify-between items-center w-full h-20 text-white fixed bg-black px-10 my-5">
+    <div className=" flex justify-between items-center w-full h-20 text-white fixed bg-black px-10 ">
       <div>
         <h1 className=" text-5xl font-signature ml-2">Maruf</h1>
       </div>
