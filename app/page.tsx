@@ -1,4 +1,11 @@
-import { Hero, Navbar, SocialLink } from "./components";
+import {
+  About,
+  Experince,
+  Hero,
+  Navbar,
+  Portfoli,
+  SocialLink,
+} from "./components";
 
 export default function Home() {
   return (
@@ -6,6 +13,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SocialLink />
+      <About />
+      <Portfoli />
+      <Experince />
     </div>
   );
 }
