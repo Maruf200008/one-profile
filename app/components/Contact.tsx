@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div className=" w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white">
+    <div className=" w-full h-[1150px] md:h-full bg-gradient-to-b from-black to-gray-800 p-4 text-white">
       <div className=" max-w-screen-lg flex flex-col p-4 justify-center mx-auto h-full">
-        <div className=" pb-8 mt-[70px] md:mt-0">
+        <div className=" pb-8 mt-[350px] md:mt-[150px]">
           <p className=" text-4xl font-bold inline border-b-4 border-gray-400">
             Contact
           </p>
